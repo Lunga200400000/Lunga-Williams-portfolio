@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunga Williams | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Red color for borders and labels */
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .screenshot-card {
+      border: 3px solid #ff0000; /* red border */
+      border-radius: 10px;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    .screenshot-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .screenshot-card span {
+      display: block;
+      margin-top: 0.5rem;
+      color: #ff0000; /* red label */
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <h1 class="logo">LW</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="profile.jpg" alt="Lunga Williams" class="profile-pic" />
+    <h2>Hi, I'm <span class="accent">Lunga Williams</span></h2>
+    <p class="subtitle">
+      Full Stack Developer | JavaScript, React, Node.js, MongoDB, WordPress
+    </p>
+
+    <div class="hero-meta">
+      <span>📍 Johannesburg, South Africa</span>
+      <span><a href="https://github.com/Lunga200400000" target="_blank">GitHub</a></span>
+      <span><a href="https://linkedin.com/in/lunga-williams-49a6b7319" target="_blank">LinkedIn</a></span>
+      <span><a href="mailto:Lungawilliamsjr2017@gmail.com">Email</a></span>
+    </div>
+
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h3>About Me</h3>
+    <p>
+      I’m a passionate Full Stack Developer based in Johannesburg, South Africa,
+      with hands-on experience in building dynamic web applications.
+    </p>
+    <p>
+      Skilled in front-end technologies like HTML, CSS, JavaScript, React, and data visualization,
+      as well as back-end development using Node.js, Express, MongoDB, and RESTful APIs.
+    </p>
+    <p>
+      I thrive on solving problems, creating efficient solutions, and connecting front-end interfaces
+      with robust back-end systems. Always learning and building, I aim to deliver scalable,
+      user-friendly applications.
+    </p>
+
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>Node.js</span>
+      <span>Express</span>
+      <span>MongoDB</span>
+      <span>REST APIs</span>
+      <span>WordPress</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h3>Projects</h3>
+
+    <div class="projects-grid">
+      <!-- Portfolio Website -->
+      <div class="card">
+        <h4>Portfolio Website</h4>
+        <p>
+          A sleek, minimalist portfolio built with HTML, CSS, and JavaScript,
+          optimized for performance and responsiveness.
+        </p>
+        <div class="links">
+          <a href="#" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Random Quote Machine -->
+      <div class="card">
+        <h4>Random Quote Machine</h4>
+        <p>
+          Front-end application built with <strong>TypeScript</strong> that dynamically
+          fetches and displays random quotes. Features state management,
+          event handling, and a clean, responsive UI.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Lunga200400000/FCC-Random-Quote-Machine-" target="_blank">
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Exercise Tracker -->
+      <div class="card">
+        <h4>Exercise Tracker API</h4>
+        <p>
+          A full-stack web application that allows users to log and track workouts.
+          Built with <strong>Node.js, Express, MongoDB, and JavaScript</strong>,
+          featuring RESTful APIs for full CRUD operations.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Lunga200400000/FCC-exercise-tracker" target="_blank">
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- URL Shortener -->
+      <div class="card">
+        <h4>URL Shortener Microservice</h4>
+        <p>
+          Full-stack JavaScript application that shortens URLs and tracks visits.
+          Built with <strong>Node.js, Express, and MongoDB</strong>, including URL
+          validation using the Node.js <code>dns</code> module and REST API endpoints.
+        </p>
+        <div class="links">
+          <a href="https://github.com/Lunga200400000/FCC-urlshortner" target="_blank">
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Hadron Clone Website -->
+      <div class="card">
+        <h4>Hadron Clone Website</h4>
+        <p>
+          Cloned Hadron Group’s product catalog on <strong>WordPress</strong> using
+          <strong>Elementor</strong> and <strong>PHP</strong>. Imported products and
+          pages using the <strong>External Importer Plugin</strong>, ensuring only Hadron products
+          appeared. Customized navigation, menus, and site structure to match the client’s branding.
+        </p>
+        <div class="links">
+          <!-- GitHub link removed as requested -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCREENSHOTS -->
+  <section id="screenshots" class="section">
+    <h3>Screenshots</h3>
+    <div class="screenshot-grid">
+      <div class="screenshot-card">
+        <img src="URL Shortener Microservice.jpg" alt="URL Shortener Microservice">
+        <span>URL Shortener Microservice</span>
+      </div>
+      <div class="screenshot-card">
+        <img src="Exercise Tracker.jpg" alt="Exercise Tracker">
+        <span>Exercise Tracker</span>
+      </div>
+      <div class="screenshot-card">
+        <img src="Hadron Clone Website.jpg" alt="Hadron Clone Website">
+        <span>Hadron Clone Website</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h3>Contact</h3>
+    <p>Let’s build something great.</p>
+
+    <div class="contact-links">
+      <a href="mailto:Lungawilliamsjr2017@gmail.com">Email</a>
+      <a href="https://github.com/Lunga200400000" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/lunga-williams-49a6b7319" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Lunga Williams</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
